@@ -1,0 +1,19 @@
+﻿@model mvc_core.Models.Cliente
+
+<h1>Dados do Cliente</h1>
+<hr />
+ClienteId:
+<label for="ClienteId">@Model.ClienteId</label>
+<br />
+Nome:
+<label for="Nome">@Model.Nome</label>
+<br />
+Email:
+<label for="Email">@Model.Email</label>
+<br />
+
+<hr />
+<a href="/Cliente/index">Retornar</a>
+
+@if (ViewBag.Erro != null)
+{<h2>@ViewBag.Erro</h2>}
